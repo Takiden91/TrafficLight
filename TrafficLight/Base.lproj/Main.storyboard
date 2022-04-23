@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvO-dc-8Fp">
+                                <rect key="frame" x="122" y="755" width="170" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WvO-dc-8Fp" secondAttribute="height" multiplier="170:63" id="pNj-yf-TzM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttomToStart" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPh-B7-gnA"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-7a-JrF">
+                                <rect key="frame" x="107" y="94" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qvu-7a-JrF" secondAttribute="height" multiplier="1:1" id="k4V-e4-9iE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJK-aK-oiH">
+                                <rect key="frame" x="107" y="313" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FJK-aK-oiH" secondAttribute="height" multiplier="1:1" id="zvK-xS-au2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20F-5c-cZl">
+                                <rect key="frame" x="107" y="532" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="20F-5c-cZl" secondAttribute="height" multiplier="1:1" id="dhN-hl-8xa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FJK-aK-oiH" firstAttribute="top" secondItem="Qvu-7a-JrF" secondAttribute="bottom" constant="19" id="4R9-gu-rAR"/>
+                            <constraint firstItem="20F-5c-cZl" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:112" id="DWF-Fp-M1F"/>
+                            <constraint firstItem="Qvu-7a-JrF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:112" id="J4l-Nq-xMB"/>
+                            <constraint firstItem="Qvu-7a-JrF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="S4u-B5-zDY"/>
+                            <constraint firstItem="20F-5c-cZl" firstAttribute="top" secondItem="FJK-aK-oiH" secondAttribute="bottom" constant="19" id="bma-Lj-yi3"/>
+                            <constraint firstItem="20F-5c-cZl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c8A-Jb-KDL"/>
+                            <constraint firstItem="WvO-dc-8Fp" firstAttribute="top" secondItem="20F-5c-cZl" secondAttribute="bottom" constant="23" id="cz4-rT-Ybq"/>
+                            <constraint firstItem="FJK-aK-oiH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25:112" id="h5G-q8-L08"/>
+                            <constraint firstItem="WvO-dc-8Fp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="85:448" id="tA8-tE-ofY"/>
+                            <constraint firstItem="FJK-aK-oiH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="udL-R7-j7x"/>
+                            <constraint firstItem="Qvu-7a-JrF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vJV-xG-Ud4"/>
+                            <constraint firstItem="WvO-dc-8Fp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="w7B-XP-Swr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttomTraffic" destination="WvO-dc-8Fp" id="j1i-fM-Rgu"/>
+                        <outlet property="greenColor" destination="20F-5c-cZl" id="mX0-SG-DiR"/>
+                        <outlet property="redColor" destination="Qvu-7a-JrF" id="2bX-cc-KaK"/>
+                        <outlet property="yellowColor" destination="FJK-aK-oiH" id="BiF-EN-hWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
