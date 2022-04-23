@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, babe!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY1-2F-gmL">
-                                <rect key="frame" x="82" y="419" width="251" height="59"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Baby 🤡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3U-sT-fv3">
+                                <rect key="frame" x="80.5" y="433" width="253" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="U3U-sT-fv3" secondAttribute="height" multiplier="253:31" id="kjk-Qq-0Ex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,9 +29,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
-                            <constraint firstItem="LY1-2F-gmL" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="251:896" id="CRo-t7-NuZ"/>
-                            <constraint firstItem="LY1-2F-gmL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NdJ-IC-lR3"/>
-                            <constraint firstItem="LY1-2F-gmL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="iKf-71-tRB"/>
+                            <constraint firstItem="U3U-sT-fv3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="389" id="2K0-T0-uqo"/>
+                            <constraint firstItem="U3U-sT-fv3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LPu-tT-46G"/>
+                            <constraint firstItem="U3U-sT-fv3" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="253:896" id="ozO-p2-eJP"/>
                         </constraints>
                     </view>
                 </viewController>
