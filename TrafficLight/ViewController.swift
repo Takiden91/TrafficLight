@@ -44,12 +44,12 @@ class ViewController: UIViewController {
             redColor.alpha = light
             yellowColor.alpha = dark
             greenColor.alpha = dark
-            count += 1
+            count = 1
         case 1 :
             yellowColor.alpha = light
             greenColor.alpha = dark
             redColor.alpha = dark
-            count += 1
+            count = 2
         case 2 :
             greenColor.alpha = light
             redColor.alpha = dark
